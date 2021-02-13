@@ -16,10 +16,14 @@
 ![Create Backup](img/README.d/Create_Backup.png)
 
   - Place the backup file in the `backups/` directory in this repository, it will be ignored by git, so save the backups elsewhere if you want to use it for a backup
-  - The files are `Zip archive datat, at least v2.0 to extract` so unzip it into the config directory
+  - The files are `Zip archive data, at least v2.0 to extract` so unzip it into the config directory
 
 ```
 unzip -o ../backups/Stream\ Deck\ -\ 12-02-2021\ -\ 12-07.streamDeckProfilesBackup
 ```
+
+  - commit the files to the repository, it's unclear if a wipe should first be used. I'll need to test it.
+  - Repeat this process for subsequent backups
+
 
 
