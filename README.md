@@ -23,7 +23,16 @@ unzip -o ../backups/Stream\ Deck\ -\ 12-02-2021\ -\ 12-07.streamDeckProfilesBack
 ```
 
   - commit the files to the repository, it's unclear if a wipe should first be used. I'll need to test it.
-  - Repeat this process for subsequent backups
+  - Repeat this process for subsequent backups, checking `git status` to see if the files have changed, commit any changes.
+
+
+  - Create a backup files in the `restore` directory
+
+```
+  (cd config/ ; zip -r -X -Z bzip2 "../restore/Stream Deck - $(date +"%d-%m-%Y") - $(date +"%H-%M").streamDeckProfilesBackup" *)
+```
+
+  - Use the Stream Deck Application's `Restore from Backup` to overwrite your Profiles on all Devices.
 
 
 
